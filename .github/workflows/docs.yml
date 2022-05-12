@@ -5,7 +5,10 @@ on:
     branches:
       - main
       - master
-
+    paths-ignore:
+      - 'LICENSE'
+      - '*.md'
+      - '.github/**'
 jobs:
   gen_docs:
     runs-on: ubuntu-latest
