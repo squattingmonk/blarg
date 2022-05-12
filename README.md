@@ -11,6 +11,12 @@ Forked from [cligen](https://github.com/c-blake/cligen)'s `parseopt3` module.
 ## Installation
 
 ```console
+$ nimble install blarg
+```
+
+or...
+
+```console
 $ git clone https://github.com/squattingmonk/blarg.git
 $ cd blarg
 $ nimble install
