@@ -1,0 +1,15 @@
+cmdEnd	index.html#cmdEnd	CmdLineKind.cmdEnd	
+cmdArgument	index.html#cmdArgument	CmdLineKind.cmdArgument	
+cmdLongOption	index.html#cmdLongOption	CmdLineKind.cmdLongOption	
+cmdShortOption	index.html#cmdShortOption	CmdLineKind.cmdShortOption	
+cmdError	index.html#cmdError	CmdLineKind.cmdError	
+CmdLineKind	index.html#CmdLineKind	blarg: CmdLineKind	
+OptParser	index.html#OptParser	blarg: OptParser	
+initOptParser	index.html#initOptParser,T,set[char],seq[string],bool,set[char],set[char],seq[string]	blarg: initOptParser[T: string | seq[string]](cmdline: T = commandLineParams();\n                                       shortNoVal: set[char] = {};\n                                       longNoVal: seq[string] = @[];\n                                       requireSeparator: bool = false;\n                                       sepChars: set[char] = {&apos;=&apos;, &apos;:&apos;};\n                                       opChars: set[char] = {};\n                                       stopWords: seq[string] = @[];\n    normalizeOption: (string) -&gt; string = (s: string) =&gt; s; normalizeStopWord: (\n    string) -&gt;\n    string = (s: string) =&gt; s): OptParser	
+next	index.html#next,OptParser	blarg: next(p: var OptParser)	
+GetOptResult	index.html#GetOptResult	blarg: GetOptResult	
+getopt	index.html#getopt.i,OptParser	blarg: getopt(p: var OptParser; reset = false): GetOptResult	
+getopt	index.html#getopt.i,T,set[char],seq[string],bool,set[char],set[char],seq[string]	blarg: getopt[T: string | seq[string]](cmdline: T = commandLineParams();\n                                shortNoVal: set[char] = {};\n                                longNoVal: seq[string] = @[];\n                                requireSeparator: bool = false;\n                                sepChars: set[char] = {&apos;=&apos;, &apos;:&apos;};\n                                opChars: set[char] = {};\n                                stopWords: seq[string] = @[]; normalizeOption: (\n    string) -&gt;\n    string = (s: string) =&gt; s; normalizeStopWord: (string) -&gt; string = (\n    s: string) =&gt;\n    s): GetOptResult	
+getopt	index.html#getopt,T,set[char],seq[string],bool,set[char],set[char],seq[string]	blarg: getopt[T: string | seq[string]](cmdline: T = commandLineParams();\n                                shortNoVal: set[char] = {};\n                                longNoVal: seq[string] = @[];\n                                requireSeparator: bool = false;\n                                sepChars: set[char] = {&apos;=&apos;, &apos;:&apos;};\n                                opChars: set[char] = {};\n                                stopWords: seq[string] = @[]; normalizeOption: (\n    string) -&gt;\n    string = (s: string) =&gt; s; normalizeStopWord: (string) -&gt; string = (\n    s: string) =&gt;\n    s): seq[GetOptResult]	
+remainingArgs	index.html#remainingArgs,OptParser	blarg: remainingArgs(p: OptParser): seq[string]	
+cmdLineRest	index.html#cmdLineRest,OptParser	blarg: cmdLineRest(p: OptParser): string	
