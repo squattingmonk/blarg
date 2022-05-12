@@ -33,6 +33,8 @@ for kind, key, val in getopt():
     assert false # Cannot happen
 ```
 
+For detailed usage, see the [docs](https://squattingmonk.github.io/blarg).
+
 ## Features
 
 - Separator characters may be required or optional, and may be customized. If
