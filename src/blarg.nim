@@ -280,7 +280,7 @@ proc getopt*[T: string | seq[string]](
 
 proc remainingArgs*(p: OptParser): seq[string] =
   ## Returns a sequence of the args that have not yet been parsed.
-  result = if p.pos >= p.cmd.len: p.cmd[p.pos..^1] else: @[]
+  result = if p.pos < p.cmd.len: p.cmd[p.pos..^1] else: @[]
 
 proc cmdLineRest*(p: OptParser): string =
   ## Returns a string of the args that have not yet been parsed.

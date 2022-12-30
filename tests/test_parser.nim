@@ -204,3 +204,14 @@ suite "Basic option parsing":
     check:
       s == "dac"
       q == @["d", "ab", "c"]
+
+  test "remainingArgs()":
+    var
+      p = initOptParser("a b c")
+      s = p.remainingArgs()
+      q: seq[string]
+    p.next()
+    q = p.remainingArgs()
+    check:
+      s == @["a", "b", "c"]
+      q == @["b", "c"]
