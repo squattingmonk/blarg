@@ -1,5 +1,5 @@
 # Package
-version       = "0.1.0"
+version       = "0.1.1"
 author        = "Michael A. Sinclair"
 description   = "A basic little argument parser"
 license       = "MIT"
